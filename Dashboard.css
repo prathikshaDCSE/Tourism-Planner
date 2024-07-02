@@ -1,0 +1,128 @@
+.dashboard {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+  
+  .dashboard .background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  .dashboard .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+  }
+  
+  .dashboard .container {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .dashboard .text-gray-800 {
+    color: #fff; /* White text color for better visibility on dark overlay */
+  }
+  
+  .dashboard .text-white {
+    color: #fff; /* Ensure text is white */
+  }
+  
+  .dashboard .shadow {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Increased shadow opacity */
+  }
+  
+  .dashboard .rounded {
+    border-radius: 0.5rem; /* Increased border radius */
+  }
+  
+  .dashboard .p-6 {
+    padding: 2rem; /* Increased padding */
+  }
+  
+  .dashboard .mb-8 {
+    margin-bottom: 2.5rem; /* Increased margin-bottom */
+  }
+  
+  .dashboard .py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  
+  .dashboard .grid {
+    display: grid;
+    gap: 1.5rem; /* Increased gap */
+  }
+  
+  .dashboard .grid-cols-1 {
+    grid-template-columns: 1fr;
+  }
+  
+  .dashboard .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .dashboard .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .dashboard .flex {
+    display: flex;
+  }
+  
+  .dashboard .justify-center {
+    justify-content: center;
+  }
+  
+  .dashboard .text-center {
+    text-align: center;
+  }
+  
+  .dashboard .text-primary {
+    color: #1a202c; /* Dark primary color */
+  }
+  
+  .dashboard .card {
+    background-color: rgba(255, 255, 255, 0.85); /* Lightened background color */
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .dashboard .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .dashboard .card h2 {
+    color: #1a202c; /* Darker text color */
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .dashboard .card p {
+    color: #4a5568;
+  }
+  
+  .dashboard .card button {
+    background-color: #2d3748; /* Dark button background */
+    color: #fff; /* Button text color */
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dashboard .card button:hover {
+    background-color: #4a5568; /* Lighter button background on hover */
+  }
+  
